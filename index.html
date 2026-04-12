@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <h1>Discount Engine</h1>
+        <label for="purchaseDiscount">Enter the total of your purchase</label>
+        <input id="purchaseDiscount"  type="number" placeholder="$">
+
+        <label for="hasCoupon">Has a coupon Discount?</label>
+        <select name="coupon" id="hasCoupon">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+
+        <button type="button" onclick="finalPrice()">Calculate</button>
+
+        <p id="finalPrice"></p>
+    </form>
+    <script src="JS/Ticket.js"></script>
+</body>
+</html>
